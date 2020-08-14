@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TimeSheetEventStore {
-    private static final String TOPIC_EXCHANGE_NAME = "timesheet";
+    private static final String TOPIC_EXCHANGE_NAME = "timesheet_exchange";
     private final RabbitTemplate rabbitTemplate;
 
     public TimeSheetEventStore(RabbitTemplate rabbitTemplate) {

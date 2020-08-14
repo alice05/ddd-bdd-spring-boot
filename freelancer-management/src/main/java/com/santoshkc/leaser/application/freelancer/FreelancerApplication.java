@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.validation.ValidationException;
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Date;
 import java.util.stream.Collectors;
 
 @Service
@@ -33,8 +35,7 @@ public class FreelancerApplication {
                 .city(dto.getCity())
                 .zipCode(dto.getZipCode())
                 .build();
-
-        freelancerService.save(aggregate);
+                            freelancerService.save(aggregate);
     }
 
     public Collection<FreelancerDto> getAll() {

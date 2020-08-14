@@ -30,7 +30,7 @@ public class RabbitMQConfig {
     Binding binding(Queue queue, TopicExchange exchange) {
         return BindingBuilder.bind(queue)
                 .to(exchange)
-                .with("foo.bar");
+                .with("timesheet.#");
     }
 
     @Bean

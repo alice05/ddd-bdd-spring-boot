@@ -17,11 +17,6 @@ public class TimeSheetController {
         this.application = application;
     }
 
-    @GetMapping("/ger")
-    public String gt() {
-        return "ger";
-    }
-
     @PostMapping("/create")
     public ResponseEntity<String> create(@Valid @RequestBody TimeSheetDto dto) {
         application.save(dto);
