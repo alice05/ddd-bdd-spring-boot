@@ -4,10 +4,8 @@ To run the application hit the following command int the terminal.
 
 `mvn install && mvn spring-boot:run -pl app-runner`
 
+[**Download slides**](docs/DDD-BDD-TDD.pptx)
 **Application Architecture:**
-
 <p>
 <img src="docs/architecture.png" width="100%" height="auto" alt="">
 </p>
-
-[Download slides](docs/DDD-BDD-TDD.pptx)
